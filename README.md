@@ -4,14 +4,14 @@ cypressAutomation
 Download or clone this repo
 Install dependencies by running the following command in terminal
 
-#Install
+# Install
 npm i -g yarn
 yarn install
 
-#Usage
+# Usage
 yarn open
 
-#Run tests
+# Run tests
 yarn clean
 yarn test
 
