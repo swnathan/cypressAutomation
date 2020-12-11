@@ -13,6 +13,12 @@ describe('Verifying CSS Home Page', () => {
     page.getAlmanac().should('be.visible')
     page.getNewsLetter().should('be.visible')
   })
+
+  it('Articles', () => {
+    const page = new homepage();
+    page.getArticles().should('be.visible')
+   page.getArticles().click()
+  })
 })
 
   afterEach(() => {
