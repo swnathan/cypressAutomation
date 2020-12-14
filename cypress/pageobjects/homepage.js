@@ -15,5 +15,9 @@ class homepage {
     getNewsLetter() {
         return cy.get('li[class="newsletter"]');
     }
+
+    getSearchBox() {
+        return cy.get('input[type="search"]');
+    }
 }
 export default homepage

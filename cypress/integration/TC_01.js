@@ -17,7 +17,16 @@ describe('Verifying CSS Home Page', () => {
   it('Articles', () => {
     const page = new homepage();
     page.getArticles().should('be.visible')
-   page.getArticles().click()
+     page.getArticles().click()
+     cy.url().should('contain','/archives')
+  })
+
+  it('Search Box', () => {
+    const page = new homepage();
+     page.getSearchBox().should('be.visible')
+     page.getSearchBox().type('articles')
+     cy.wait(1000)
+     cy.get('.jetpack-instant-search__search-results-title'). should('be.visible');
   })
 })
 
